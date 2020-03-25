@@ -8,6 +8,7 @@ header {
 
 #mainHeader {
     text-align: center;
+    margin-bottom: 1%;
 }
 
 body {
@@ -18,11 +19,9 @@ body {
     text-align: center;
 }
 
-pre {
-    display: block;
-    font-family: monospace;
-    white-space: pre;
-    padding: 0;
+img {
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 #wrapper {
