@@ -1,0 +1,49 @@
+body {
+    background-color: #595647;
+    color: #e5e2db;
+}
+
+h1 {
+    color: #5dbcd2;
+}
+
+h2 {
+    color: #5dbcd2;
+}
+
+a {
+    color: #d7565d;
+}
+
+.MvDesc {
+    font-style: italic;
+}
+
+.mainHeader {
+    font-size: 300%;
+}
+
+.pInline {
+    display: inline;
+}
+
+.img1 {
+    height: 200px;
+    width: 200px;
+    border-radius: 10%;
+}
+
+.img2 {
+    height: 200px;
+    width: 350px;
+    border-radius: 10%;
+}
+
+strong {
+    color: yellow;
+}
+
+.back {
+    color: teal;
+    font-size: 40px;
+}
