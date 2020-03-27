@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>TMNT - Rancid Tomatoes</title>
@@ -18,7 +18,14 @@
 
     <h1 class="centered-header">TMNT (2007)</h1>
 
+    <!-- content holds every thing other than the banner and header 
+    It devides into two elements using flexbox
+     - reviews
+       - then the reviews part divided into two columns using multicolumn layout
+     - General Overview  -->
+
     <div id="content">
+        <!-- flex box used to devide content into reviews and general overview parts -->
         <div class="flex-container">
             <div id="reviews">
                 <div id="rating-icon">
@@ -28,6 +35,7 @@
                     </span>
                 </div>
                 <div>
+                    <!-- Multicolumn layout is used on this div element. -->
                     <div id="review-text">
                         <p class="comment">
                             <img src="../images/movie/rotten.gif" alt="Rotten" />

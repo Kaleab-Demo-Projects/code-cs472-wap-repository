@@ -1,19 +1,24 @@
+/* The whole body of the page */
+
 body {
     background-image: url(../images/movie/background.png);
     font-size: 8pt;
     font-family: Tahoma, sans-serif;
 }
 
-#img-banner {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+
+/* style anner of the page and header*/
 
 #banner {
     background-image: url(../images/movie/bannerbg.png);
     height: 50px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+#img-banner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .centered-header {
@@ -25,6 +30,9 @@ body {
     text-shadow: 2px 2px #999999;
 }
 
+
+/* styling content of the page */
+
 #content {
     width: 800px;
     margin-left: auto;
@@ -35,6 +43,9 @@ body {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
+
+/* styling review */
+
 #reviews {
     width: 550px;
 }
@@ -42,31 +53,19 @@ body {
 #review-text {
     padding: 6px;
     column-count: 2;
-    column-width: 47%;
+    width: 517px;
     column-gap: 2%;
 }
 
-#general-overview {
-    width: 250px;
-    background-color: #A2B964;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-#general-overview>dl {
-    padding: 10pt;
-}
-
-#general-overview dt {
-    font-weight: bold;
-}
-
-#general-overview dd {
-    margin-bottom: 10pt;
-}
+/* flex box */
 
 .flex-container {
     display: flex;
 }
+
+
+/* style general overview */
 
 #rating-icon {
     background-image: url(../images/movie/rbg.png);
@@ -103,6 +102,30 @@ body {
     text-align: center;
     padding: 5px;
 }
+
+
+/* styling general overview */
+
+#general-overview {
+    width: 250px;
+    background-color: #A2B964;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#general-overview>dl {
+    padding: 10pt;
+}
+
+#general-overview dt {
+    font-weight: bold;
+}
+
+#general-overview dd {
+    margin-bottom: 10pt;
+}
+
+
+/* page validator style */
 
 .page-validator {
     position: fixed;
