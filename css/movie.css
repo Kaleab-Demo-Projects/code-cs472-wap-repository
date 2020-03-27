@@ -33,26 +33,37 @@ body {
     overflow: hidden;
 }
 
-.flex-container>div {
-    background-color: #f0ff0f;
-}
-
 #reviews {
     width: 550px;
 }
 
 #review-text {
     padding: 6px;
+    column-count: 2;
+    column-width: 47%;
+    column-gap: 2%;
 }
 
 #general-overview {
     width: 250px;
     background-color: #A2B964;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#general-overview>dl {
+    padding: 10pt;
+}
+
+#general-overview dt {
+    font-weight: bold;
+}
+
+#general-overview dd {
+    margin-bottom: 10pt;
 }
 
 .flex-container {
     display: flex;
-    background-color: DodgerBlue;
 }
 
 #rating-icon {
@@ -64,4 +75,36 @@ body {
 
 #rating {
     vertical-align: top;
+}
+
+.comment {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+}
+
+.comment-by {
+    font-style: italic;
+    margin-bottom: 20pt;
+}
+
+.comment-by>img {
+    float: left;
+}
+
+#no-of-reviews {
+    background-color: #A2B964;
+    text-align: center;
+    padding: 5px;
+}
+
+.page-validator {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    font-size: 18px;
+    opacity: 50%;
 }
