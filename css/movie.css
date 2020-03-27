@@ -23,3 +23,45 @@ body {
     font-size: 24pt;
     text-shadow: 2px 2px #999999;
 }
+
+#content {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px grey solid;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.flex-container>div {
+    background-color: #f0ff0f;
+}
+
+#reviews {
+    width: 550px;
+}
+
+#review-text {
+    padding: 6px;
+}
+
+#general-overview {
+    width: 250px;
+    background-color: #A2B964;
+}
+
+.flex-container {
+    display: flex;
+    background-color: DodgerBlue;
+}
+
+#rating-icon {
+    background-image: url(../images/movie/rbg.png);
+    font-size: 46pt;
+    color: red;
+    height: 83px;
+}
+
+#rating {
+    vertical-align: top;
+}
