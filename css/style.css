@@ -1,0 +1,27 @@
+#menus {
+    margin-top: 50px;
+    margin: auto;
+    width: fit-content;
+    background-color: #fae4fc;
+    color: #880061;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+body {
+    background-color: #eee6ff;
+}
+
+img {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.page-validator {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    font-size: 18px;
+    opacity: 50%;
+}
