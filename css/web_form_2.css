@@ -35,18 +35,21 @@
     background-color: white;
     border: #C5CAE9 solid 2px;
     color: #C5CAE9;
+    margin: 10px;
 }
 
 #right-side-submit-button {
     background-color: white;
     color: orange;
     border: orange solid 2px;
+    margin: 10px;
 }
 
 #right-side-add-button {
     background-color: white;
     border: lightblue solid 2px;
     color: lightblue;
+    margin: 10px;
 }
 
 #logo-text {
@@ -62,16 +65,25 @@
     font-weight: 300;
 }
 
+#content {
+    width: 80%;
+    margin: auto;
+}
+
+#form-name {
+    font-size: 30px;
+}
+
 input[type=text],
 input[type=password] {
     width: 100%;
-    padding: 15px 25px;
+    padding: 10px 15px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 22px;
+    font-size: 15px;
 }
 
 input[type=submit],
@@ -95,9 +107,9 @@ input[type=submit]:hover {
     /* background-color: #f2f2f2; */
     /* border-width: 2px; */
     border: #FAFAFA solid 5px;
-    padding: 20px;
+    padding: 10px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 30px;
+    font-size: 15px;
     opacity: 80%;
     float: left;
     width: 45%;
@@ -117,9 +129,9 @@ input[type=submit]:hover {
     /* background-color: #f2f2f2; */
     /* border-width: 2px; */
     border: #FAFAFA solid 5px;
-    padding: 20px;
+    padding: 10px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 30px;
+    font-size: 15px;
     opacity: 80%;
     float: right;
     width: 45%;
