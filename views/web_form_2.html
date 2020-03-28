@@ -10,9 +10,18 @@
 
 <body>
     <div id="menu-bar">
-        <span>MUM Golden Dom Market : : : SRM System  </span>
-        <a href="#">| Products</a>
-        <a href="#">| Suppliers</a>
+        <div id="menu-bar-left-side">
+            <span id="logo-text">MUM Golden Dom Market : : : SRM System  </span>
+            <span class="vertical-line">|</span>
+            <a href="#"> Products</a>
+            <span class="vertical-line">|</span>
+            <a href="#"> Suppliers</a>
+        </div>
+
+        <div id="menu-bar-right-side">
+            <span>Hello!</span>
+            <input id="sign-out" type="submit" value="Sign Out">
+        </div>
     </div>
     <div id="left-form">
         <form>
@@ -57,9 +66,9 @@
                 <small>We will never share your email with anyone</small>
             </div>
 
-            <input type="checkbox" id="chkme" name="checkme" value="">
-            <input type="checkbox" id="chkme" name="checkme" value="">
-            <input type="checkbox" id="chkme" name="checkme" value="">
+            <input id="right-side-reset-button" type="reset" value="Reset">
+            <input id="right-side-submit-button" type="submit" value="Cancel">
+            <input id="right-side-add-button" type="submit" value="Add Product">
         </form>
     </div>
 
