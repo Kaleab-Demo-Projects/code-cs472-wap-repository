@@ -35,8 +35,9 @@
     </div>
     <div id="content">
         <p id="form-name">New Product Form</p>
-        <div id="left-form">
-            <form>
+        <form>
+            <div id="left-form">
+
                 <div>
                     <label for="pName">Product Number</label>
                     <input type="text" id="pName" name="productName" required>
@@ -52,38 +53,38 @@
                     <input type="text" id="uPrice" name="unit-price" placeholder="0.0" required>
                 </div>
 
-            </form>
-        </div>
 
-        <div id="right-form">
-            <form action="/action_page.php">
-                <div>
-                    <label for="quaStock">Quantity in Stock</label>
-                    <input type="text" id="quaStock" name="quantityInStock" placeholder="0" required>
-                </div>
+            </div>
 
-                <div>
-                    <label for="suppliers">Select A Supplier</label>
+            <div id="right-form">
+                <form action="/action_page.php">
                     <div>
-                        <select id="suppliers">
+                        <label for="quaStock">Quantity in Stock</label>
+                        <input type="text" id="quaStock" name="quantityInStock" placeholder="0" required>
+                    </div>
+
+                    <div>
+                        <label for="suppliers">Select A Supplier</label>
+                        <div>
+                            <select id="suppliers">
                             <option value="UNESCO">UNESCO</option>
                             <option value="Maternal Health">Maternal Health</option>
                             <option value="Jimma Hub">Jimma Hub</option>
                             <option value="Center Hub">Center Hub</option>
                           </select>
+                        </div>
                     </div>
-                </div>
 
-                <div>
-                    <label for="date">Date Supplied</label>
-                    <input type="text" id="date" name="date-supplied" required>
-                </div>
+                    <div>
+                        <label for="date">Date Supplied</label>
+                        <input type="text" id="date" name="date-supplied" required>
+                    </div>
 
-                <input id="right-side-reset-button" type="reset" value="Reset">
-                <input id="right-side-submit-button" type="submit" value="Cancel">
-                <input id="right-side-add-button" type="submit" value="Add Product">
+                    <input id="right-side-reset-button" type="reset" value="Reset">
+                    <input id="right-side-submit-button" type="submit" value="Cancel">
+                    <input id="right-side-add-button" type="submit" value="Add Product">
+            </div>
             </form>
-        </div>
     </div>
 
     <div class="page-validator">
