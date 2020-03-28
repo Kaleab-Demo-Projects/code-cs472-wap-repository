@@ -1,3 +1,5 @@
+/* Styling the menu-bar  */
+
 #menu-bar {
     padding: 4px;
     margin-bottom: 20px;
@@ -7,6 +9,9 @@
     font-family: sans-serif;
 }
 
+
+/* Styling the menu-bar links */
+
 #menu-bar a {
     padding: 10px;
     font-size: 20px;
@@ -15,41 +20,17 @@
     opacity: 70%;
 }
 
+
+/* Styling the menu-bar left side */
+
 #menu-bar-left-side {
     width: 80%;
     float: left;
     vertical-align: middle;
 }
 
-#sign-out {
-    background-color: white;
-    color: black;
-}
-
-#menu-bar-right-side {
-    width: 12%;
-    float: right;
-}
-
-#right-side-reset-button {
-    background-color: white;
-    border: #C5CAE9 solid 2px;
-    color: #C5CAE9;
-    margin: 10px;
-}
-
-#right-side-submit-button {
-    background-color: white;
-    color: orange;
-    border: orange solid 2px;
-    margin: 10px;
-}
-
-#right-side-add-button {
-    background-color: white;
-    border: lightblue solid 2px;
-    color: lightblue;
-    margin: 10px;
+span {
+    vertical-align: middle;
 }
 
 #logo-text {
@@ -65,16 +46,38 @@
     font-weight: 300;
 }
 
+
+/* Styling the menu-bar right side */
+
+#menu-bar-right-side {
+    width: 12%;
+    float: right;
+}
+
+#sign-out {
+    background-color: white;
+    color: black;
+}
+
+
+/* STYLING CONTENT AREA */
+
 #content {
     width: 80%;
     margin: auto;
 }
+
+
+/* Styling form header name */
 
 #form-name {
     font-size: 25px;
     font-family: sans-serif;
     opacity: 70%;
 }
+
+
+/* Styling input fields as a whole*/
 
 input[type=text],
 input[type=password] {
@@ -115,6 +118,9 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
+
+/* styling form located on left side */
+
 #left-form {
     padding: 10px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -132,6 +138,9 @@ input[type=submit]:hover {
     font-size: 15pt;
     opacity: 60%;
 }
+
+
+/* styling form located on right side */
 
 #right-form {
     padding: 10px;
@@ -151,6 +160,34 @@ input[type=submit]:hover {
     opacity: 60%;
 }
 
-span {
-    vertical-align: middle;
+#right-side-reset-button {
+    background-color: white;
+    border: #C5CAE9 solid 2px;
+    color: #C5CAE9;
+    margin: 10px;
+}
+
+#right-side-submit-button {
+    background-color: white;
+    color: orange;
+    border: orange solid 2px;
+    margin: 10px;
+}
+
+#right-side-add-button {
+    background-color: white;
+    border: lightblue solid 2px;
+    color: lightblue;
+    margin: 10px;
+}
+
+
+/* styling page validator used to validate this page */
+
+.page-validator {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    font-size: 18px;
+    opacity: 50%;
 }
