@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Form 1</title>
+    <link rel="stylesheet" type="text/css" href="../css/web_form_1.css">
+</head>
+
+<body>
+    <div id="form">
+        <form action="/action_page.php">
+            <div id="email-group">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="Your email.." required>
+                <small>We will never share your email with anyone</small>
+            </div>
+
+            <div id="password-group">
+                <label for="pword">PassWord</label>
+                <input type="text" id="pword" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10}" placeholder="Your last name..">
+            </div>
+
+            <div id="customer-website-group">
+                <label for="customerWebsite">Website</label>
+                <input type="text" id="customerWebsite" name="customerWebsite" placeholder="Enter your website link" pattern="https?://.+" title="Include http://" required>
+                <small>Enter valid website link</small>
+            </div>
+
+            <div id="checkme-group">
+                <input type="checkbox" id="chkme" name="checkme" value="">
+                <span>Check me out</span>
+            </div>
+
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
