@@ -27,19 +27,19 @@
         <p id="form-name">New Product Form</p>
         <div id="left-form">
             <form>
-                <div id="email-group">
-                    <label for="email">Product Number</label>
-                    <input type="text" id="email" name="email" placeholder="Your email.." required>
+                <div>
+                    <label for="pName">Product Number</label>
+                    <input type="text" id="pName" name="productName" required>
                 </div>
 
-                <div id="email-group">
-                    <label for="email">Name</label>
-                    <input type="text" id="email" name="email" placeholder="Your email.." required>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
 
-                <div id="email-group">
-                    <label for="email">Unit Price</label>
-                    <input type="text" id="email" name="email" placeholder="Your email.." required>
+                <div>
+                    <label for="uPrice">Unit Price</label>
+                    <input type="text" id="uPrice" name="unit-price" placeholder="0.0" required>
                 </div>
 
             </form>
@@ -47,19 +47,26 @@
 
         <div id="right-form">
             <form action="/action_page.php">
-                <div id="email-group">
-                    <label for="email">Quantity in Stock</label>
-                    <input type="text" id="email" name="email" placeholder="Your email.." required>
+                <div>
+                    <label for="quaStock">Quantity in Stock</label>
+                    <input type="text" id="quaStock" name="quantityInStock" placeholder="0" required>
                 </div>
 
-                <div id="email-group">
-                    <label for="email">Select A Supplier</label>
-                    <input type="text" id="email" name="email" placeholder="Your email.." required>
+                <div>
+                    <label for="suppliers">Select A Supplier</label>
+                    <div>
+                        <select id="suppliers">
+                            <option value="UNESCO">Volvo</option>
+                            <option value="Maternal Health">Saab</option>
+                            <option value="Jimma Hub">Mercedes</option>
+                            <option value="Center Hub">Audi</option>
+                          </select>
+                    </div>
                 </div>
 
-                <div id="email-group">
-                    <label for="email">Date Supplied</label>
-                    <input type="text" id="email" name="email" placeholder="Your email.." required>
+                <div>
+                    <label for="date">Date Supplied</label>
+                    <input type="text" id="date" name="date-supplied" required>
                 </div>
 
                 <input id="right-side-reset-button" type="reset" value="Reset">
