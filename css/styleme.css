@@ -58,11 +58,3 @@ img {
 strong {
     color: yellow;
 }
-
-.page-validator {
-    position: fixed;
-    bottom: 2px;
-    right: 2px;
-    font-size: 18px;
-    opacity: 50%;
-}

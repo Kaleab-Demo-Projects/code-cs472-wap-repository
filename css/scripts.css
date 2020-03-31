@@ -1,0 +1,14 @@
+input {
+    margin: 3px;
+    font-family: sans-serif;
+}
+
+.task {
+    border: solid 2px rgb(245, 240, 240);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.append-button {
+    background-color: rgb(132, 185, 132);
+}
