@@ -36,7 +36,7 @@
     	This function checks if an input is a vowel
     */
     function isVowel(ch) {
-        if (ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u')
+        if (ch === 'a' || ch === 'e' || ch === 'i' || ch === 'o' || ch === 'u' || ch === 'A' || ch === 'E' || ch === 'I' || ch === 'O' || ch === 'U')
             return true;
         else
             return false;
@@ -149,6 +149,14 @@
         return fibList;
     }
 
+    function FunctionTest(expected, found) {
+        if (expected === found) {
+            return "Successful Test";
+        } else {
+            return "Failed Test";
+        }
+    }
+
     //max of two
     document.getElementById("max-of-two").addEventListener("click", function() {
         let n1 = parseInt(document.getElementById("input-1").value);
@@ -243,14 +251,6 @@
         longestListArray = [];
     });
 
-    // //Array Multplication
-    // document.getElementById("add-element-2").addEventListener("click", function() {
-    //     let n8 = parseInt(document.getElementById("input-8").value);
-    //     mulArray.push(n8);
-    //     document.getElementById("input-8").value = "";
-    //     document.getElementById("array-elements-2").textContent = mulArray;
-    // });
-
     document.getElementById("multiply").addEventListener("click", function() {
         document.getElementById("result5").textContent = multiply(mulArray);
         mulArray = [];
@@ -267,54 +267,28 @@
 
 
 
+    console.log("Expected output of max(30,15) is 30  " + FunctionTest(20, maxTwo(20, 10)));
 
+    console.log("Expected output of maxOfThree(5,4,24) is 24  " + FunctionTest(44, maxThree(5, 4, 44)));
 
-    // function myFunctionTest(expected, found) {
-    //     if (expected === found) {
-    //         return "TEST SUCCEEDED";
-    //     } else {
-    //         return "TEST FAILED";
-    //     }
-    // }
+    console.log("Expected output of isVowel('o') is true  " + FunctionTest(true, isVowel("o")));
 
-    // function areEqualArrays(array1, array2) {
-    //     try {
-    //         if (!Array.isArray(array1)) { return false; }
-    //         if (!Array.isArray(array2)) { return false; }
-    //         if (array1.length != array2.length) {
-    //             return false;
-    //         }
+    console.log("Expected output of sum('[1,2,3,4,5]') is 15  " + FunctionTest(15, sum([1, 2, 3, 4, 5])));
 
-    //         for (var i = 0; i < array1.length; i++) {
-    //             if (array1[i] !== array2[i]) {
-    //                 return false;
-    //             }
-    //         }
-    //         return true;
-    //     } catch (e) {
-    //         return false;
-    //     }
-    // }
+    console.log("Expected output of multiply('[1,2,3,4]') is 24  " + FunctionTest(24, multiply([1, 2, 3, 4])));
 
-    // // console.log("Expected output of max(20,10) is 20  " + myFunctionTest(20, maxTwo(20, 10)));
+    console.log("Expected output of reverse('kaleab') is 'baelak'  " + FunctionTest('baelak', stringReverse('kaleab')));
 
-    // // console.log("Expected output of maxOfThree(5,4,44) is 44  " + myFunctionTest(44, maxThree(5, 4, 44)));
+    console.log("Expected output of filterLongWords(['kaleab','girma','hailemariam','bekele'] , 6) is 'hailemariam'" + FunctionTest('hailemariam', filterLongWords(['kaleab', 'girma', 'hailemariam', 'bekele'], 6)));
 
-    // // console.log("Expected output of isVowel('o') is true  " + myFunctionTest(true, isVowel("o")));
+    console.log("Expected output of findLongestWordLength(['kaleab','girma','hailemariam','bekele']) is '11'  " + FunctionTest(11, findLongestWordLength(['kaleab', 'girma', 'hailemariam', 'bekele'])));
 
-    // // console.log("Expected output of sum('[1,2,3,4,5]') is 15  " + myFunctionTest(15, sum([1, 2, 3, 4, 5])));
+    console.log("Expected output of computeSumOfSquares('[1,2,3]') is '14'  " + FunctionTest(14, computeSumOfSquares([1, 2, 3])));
 
-    // // console.log("Expected output of multiply('[1,2,3,4]') is 24  " + myFunctionTest(24, multiply([1, 2, 3, 4])));
+    console.log("Expected output of printOddNumbersOnly('[1,2,3]') is ['1' , '3']  " + FunctionTest([1, 3].toString(), printOddNumbersOnly([1, 2, 3]).toString()));
+    console.log("Expected output of multiplyUsingReduce('[1,2,3]') is '6'  " + FunctionTest(6, multiplyUsingReduce([1, 2, 3])));
+    console.log("Expected output of sumUsingReduce('[1,2,3]') is '6'  " + FunctionTest(6, sumUsingReduce([1, 2, 3])));
+    console.log("Expected output of findSecondBiggest('[1,2,3]') is '2'  " + FunctionTest(2, findSecondBiggest([1, 2, 3])));
+    console.log("Expected output of printFibo('[5,0,1]') is ['0' , '1' , '1' , '2' , '3']  " + FunctionTest([0, 1, 1, 2, 3].toString(), printFibo([5, 0, 1])));
 
-    // // console.log("Expected output of reverse('blein') is 'nielb'  " + myFunctionTest('nielb', stringReverse('blein')));
-
-    // // console.log("Expected output of findLongestWord(['blein','yirdaw','girma','henok']) is 'yirdaw'" + myFunctionTest(3, findLongestWord(['blein', 'yirdaw', 'girma', 'henok'])));
-
-    // // console.log("Expected output of filterLongWords(['blein','yirdaw','girma','henok']) is '['blein','yirdaw','girma','henok']'  " + myFunctionTest(["blein", "yirdaw", "girma", "henok"], filterLongWords(["blein", "kidane", "girma", "henok"], 4)));
-
-    // // console.log("Expected output of multiplyByTen('[1,2,3,4,5]') is '[10,20,30,40,50]'  " + myFunctionTest([10, 20, 30, 40, 50], multiplyByTen([1, 2, 3, 4, 5])));
-
-    // // console.log("Expected output of ElementOf5('[1,5,3,5,5]') is '[10,50,30,50,50]'  " + myFunctionTest([5, 5, 5], ElementOf3([1, 5, 3, 5, 5])));
-
-    // // console.log("Expected output of arrayProduct(' [1,3,5,3,3]') is 135  " + myFunctionTest(135, arrayProduct([1, 3, 5, 3, 3])));
 })()
