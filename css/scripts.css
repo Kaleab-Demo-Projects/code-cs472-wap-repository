@@ -12,3 +12,11 @@ input {
 .append-button {
     background-color: rgb(132, 185, 132);
 }
+
+.page-validator {
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    font-size: 18px;
+    opacity: 50%;
+}
