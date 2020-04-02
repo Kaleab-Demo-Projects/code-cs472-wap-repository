@@ -19,4 +19,5 @@ input {
     right: 2px;
     font-size: 18px;
     opacity: 50%;
+    max-width: max-content;
 }
